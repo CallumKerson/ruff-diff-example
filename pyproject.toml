@@ -1,0 +1,12 @@
+[project]
+name = "ruff-diff-example"
+version = "0.1.0"
+description = "Demonstrates ruff's diff behaviour."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+# https://docs.astral.sh/ruff/rules/
+[tool.ruff]
+lint.select = ["D404"]
+target-version = "py312"

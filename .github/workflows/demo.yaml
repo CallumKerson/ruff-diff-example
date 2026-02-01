@@ -1,0 +1,20 @@
+---
+name: Demo of Ruff diff behaviour
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: jdx/mise-action@v3
+
+      - run: ./test.sh
